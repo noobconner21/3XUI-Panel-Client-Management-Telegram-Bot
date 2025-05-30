@@ -68,6 +68,6 @@ python bot.py
 
 ## Contact
 
-- Telegram : t.me/ShayC21
+- Telegram : https://t.me/ShayC21
 
 
