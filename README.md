@@ -11,7 +11,7 @@ A secure Telegram bot to manage VPN clients on 3xUI panel — create users, set 
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Running the Bot](#running-the-bot)
-- [Usage](#usage)
+- [Use](#use)
 - [License](#license)
 - [Contact](#contact)
 
@@ -48,7 +48,7 @@ chmod +x install.sh
 ./install.sh
 
 ```
-## Usage
+## Use
 
 ```bash
 python bot.py
