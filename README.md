@@ -66,8 +66,10 @@ python bot.py
 
 - This project is licensed under the MIT License.
 
+
 ## Contact
 
 - Telegram : https://t.me/ShayC21
+- Big Thanks for https://t.me/pranith_sandaruwan
 
 
