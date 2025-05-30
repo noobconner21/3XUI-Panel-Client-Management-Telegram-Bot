@@ -44,7 +44,7 @@ A secure Telegram bot to manage VPN clients on 3xUI panel — create users, set 
 ```bash
 git clone https://github.com/noobconner21/3XUI-Panel-Client-Management-Telegram-Bot.git
 cd 3XUI-Panel-Client-Management-Telegram-Bot
-chmod +X install.sh
+chmod +x install.sh
 ./install.sh
 
 ```
