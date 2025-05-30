@@ -12,6 +12,8 @@ A secure Telegram bot to manage VPN clients on 3xUI panel — create users, set 
 - [Configuration](#configuration)
 - [Running the Bot](#running-the-bot)
 - [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
 
 ---
 
@@ -46,10 +48,26 @@ chmod +X install.sh
 ./install.sh
 
 ```
-### Usage
+## Usage
 
 ```bash
 python bot.py
 
 ```
+
+### Telegram Bot Use
+
+- /start — Display welcome message and help
+- /addclient — Start the client creation process (4 steps)
+- /cancel — Cancel current operation
+
+
+## License
+
+- This project is licensed under the MIT License.
+
+## Contact
+
+- Telegram : t.me/ShayC21
+
 
