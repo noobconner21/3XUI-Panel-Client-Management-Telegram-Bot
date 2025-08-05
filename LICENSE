@@ -1,0 +1,59 @@
+MIT License
+
+Copyright (c) 2025 3xUI Telegram Bot Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Additional Terms
+
+### Attribution
+When using this software, please provide appropriate credit to the original authors:
+- Write by [@ShayC21](https://t.me/ShayC21)
+
+### Usage Guidelines
+- This software is intended for legitimate VPN management purposes
+- Users are responsible for compliance with local laws and regulations
+- The authors are not responsible for misuse of this software
+
+### Third-Party Components
+This software includes components from:
+- python-telegram-bot library (LGPLv3)
+- requests library (Apache 2.0)
+- Other Python standard library components
+
+### Warranty Disclaimer
+This software is provided "as is" without warranty of any kind. The authors
+make no warranties, express or implied, regarding the software's functionality,
+reliability, or suitability for any particular purpose.
+
+### Limitation of Liability
+In no event shall the authors be liable for any damages, including but not
+limited to direct, indirect, incidental, special, consequential, or punitive
+damages, arising from the use of this software.
+
+### Support
+While not obligated, the authors may provide support through:
+- GitHub issues and discussions
+- Telegram support channels
+- Community forums
+
+For the most current version of this license, please refer to:
+https://github.com/noobconner21/3XUI-Panel-Client-Management-Telegram-Bot/blob/main/LICENSE
