@@ -1,0 +1,28 @@
+{
+  "XUI_HOST": "https://your-server.com:2053",
+  "USERNAME": "admin",
+  "PASSWORD": "your_panel_password",
+  "BOT_TOKEN": "1234567890:ABCdefGHIjklMNOpqrsTUVwxyz",
+  "TG_ID": 123456789,
+  "ADVANCED_SETTINGS": {
+    "LOG_LEVEL": "INFO",
+    "MAX_CLIENTS_PER_INBOUND": 100,
+    "DEFAULT_DATA_LIMIT_GB": 50,
+    "DEFAULT_EXPIRY_DAYS": 30,
+    "ENABLE_TRAFFIC_MONITORING": true,
+    "ALLOWED_PROTOCOLS": ["vless", "vmess", "trojan"],
+    "AUTO_BACKUP_CLIENTS": false
+  },
+  "SECURITY": {
+    "RATE_LIMIT_ENABLED": true,
+    "MAX_REQUESTS_PER_MINUTE": 10,
+    "ENABLE_DETAILED_LOGGING": true,
+    "LOG_USER_ACTIONS": true
+  },
+  "NOTIFICATIONS": {
+    "NOTIFY_ON_CLIENT_ADD": true,
+    "NOTIFY_ON_CLIENT_REMOVE": true,
+    "NOTIFY_ON_ERRORS": true,
+    "ADMIN_CHAT_IDS": [123456789]
+  }
+}

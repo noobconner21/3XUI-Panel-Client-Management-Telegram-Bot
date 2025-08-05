@@ -1,75 +1,113 @@
-# 3xUI VPN Client Management Telegram Bot
+# 3xUI Telegram Bot
 
-A secure Telegram bot to manage VPN clients on 3xUI panel — create users, set data limits, and expiry dates quickly via Telegram commands.
-
----
-
-## Table of Contents
-
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Bot](#running-the-bot)
-- [Use](#use)
-- [License](#license)
-- [Contact](#contact)
-
----
+A simple Telegram bot for managing 3xUI panel clients.
 
 ## Features
 
-- Add new VPN clients easily via Telegram chat
-- Support for setting data limits (GB) and expiry days
-- Generates VLESS connection URIs for clients
-- Access restricted to authorized Telegram users only
-- Securely connects to 3xUI panel API
-- User-friendly step-by-step commands
+- **Client Management**: Create, delete, enable/disable clients
+- **Traffic Monitoring**: Real-time usage statistics
+- **Multi-Protocol Support**: VLESS, VMess, Trojan protocols
+- **Admin Controls**: Secure administrative functions
+- **Docker Ready**: Easy deployment with Docker
 
----
+## Quick Start
 
-## Prerequisites
+### Using Docker (Recommended)
 
-- Python 3.8 or higher
-- Telegram bot token from [BotFather](https://t.me/BotFather)
-- Access to 3xUI panel API with username and password
-- Linux or macOS terminal (Windows users can use WSL or Git Bash)
-
----
-
-## Installation
-
-### 1. Clone this repository
-
+1. **Clone and setup**:
 ```bash
-git clone https://github.com/noobconner21/3XUI-Panel-Client-Management-Telegram-Bot.git
+git clone <repository-url>
 cd 3XUI-Panel-Client-Management-Telegram-Bot
-chmod +x install.sh
-./install.sh
+cd docker
+cp .env.example .env
+```
+
+2. **Configure** `.env` file:
+```env
+TELEGRAM_BOT_TOKEN=your_bot_token
+XUI_PANEL_URL=https://your-panel-domain.com
+XUI_USERNAME=your_username
+XUI_PASSWORD=your_password
+ADMIN_USER_IDS=123456789,987654321
+```
+
+3. **Deploy**:
+```bash
+docker-compose up -d
+```
+
+### Manual Installation
+
+1. **Install dependencies**:
+```bash
+pip install -r requirements.txt
+```
+
+2. **Configure** `config/config.json`:
+```json
+{
+  "telegram": {
+    "bot_token": "your_bot_token",
+    "admin_users": [123456789]
+  },
+  "xui": {
+    "panel_url": "https://your-panel-domain.com",
+    "username": "your_username",
+    "password": "your_password"
+  }
+}
+```
+
+3. **Run**:
+```bash
+python src/main.py
+```
+
+## Bot Commands
+
+### User Commands
+- `/start` - Initialize bot
+- `/help` - Show help message
+- `/status` - Panel status
+- `/clients` - List clients
+
+### Admin Commands
+- `/addclient <email>` - Add new client
+- `/delclient <email>` - Delete client
+- `/enable <email>` - Enable client
+- `/disable <email>` - Disable client
+- `/traffic` - Traffic statistics
+
+## Project Structure
 
 ```
-## Use
+├── src/                 # Source code
+│   ├── main.py         # Main bot application
+│   ├── config_manager.py
+│   ├── xui_client.py
+│   ├── logger_setup.py
+│   └── utils.py
+├── config/             # Configuration
+│   └── config.example.json
+├── docker/             # Docker setup
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── .env.example
+└── requirements.txt    # Dependencies
+```
+
+## Management
 
 ```bash
-python bot.py
+# View logs
+docker-compose logs -f
 
+# Restart bot
+docker-compose restart
+
+# Stop bot
+docker-compose down
+
+# Update and restart
+docker-compose pull && docker-compose up -d
 ```
-
-### Telegram Bot Use
-
-- /start — Display welcome message and help
-- /addclient — Start the client creation process (4 steps)
-- /cancel — Cancel current operation
-
-
-## License
-
-- This project is licensed under the MIT License.
-
-
-## Contact
-
-- Telegram : https://t.me/ShayC21
-- Big Thanks for https://t.me/pranith_sandaruwan
-
-
